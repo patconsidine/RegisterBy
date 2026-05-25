@@ -109,12 +109,14 @@ warranty,tracker,receipt,register,reminder,appliance,baby,return,expiry,claim,pr
 
 ### 10. Required URLs
 
-| Field | What to use |
-|-------|-------------|
-| **Privacy Policy** | Host `docs/PRIVACY.md` on GitHub Pages/Notion — public URL |
-| **Support URL** | Simple page with **registerby.app.support@gmail.com** (Notion/GitHub Pages) |
+Enable GitHub Pages first: see **[docs/GITHUB_PAGES.md](GITHUB_PAGES.md)**.
 
-Support email is set in app code: `AppSettings.supportEmail`.
+| Field | URL |
+|-------|-----|
+| **Privacy Policy** | https://patconsidine.github.io/RegisterBy/ |
+| **Support URL** | https://patconsidine.github.io/RegisterBy/support.html |
+
+Support email: **registerby.app.support@gmail.com** (`AppSettings.supportEmail`). Same links are in **Settings** in the app.
 
 ### 11. Availability
 
