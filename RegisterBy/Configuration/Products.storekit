@@ -1,0 +1,31 @@
+{
+  "identifier" : "RegisterByStore",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "registerby_pro_lifetime",
+      "localizations" : [
+        {
+          "description" : "Unlimited warranty tracking",
+          "displayName" : "RegisterBy Pro",
+          "locale" : "en_AU"
+        }
+      ],
+      "productID" : "registerby_pro_lifetime",
+      "referenceName" : "RegisterBy Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "registerby",
+    "_developerTeamID" : "XXXXXXXXXX",
+    "_lastSynchronizedDate" : 0
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
