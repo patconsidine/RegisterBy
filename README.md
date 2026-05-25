@@ -73,7 +73,8 @@ No account, no analytics SDK, no server. Photos and data stored locally via Swif
 
 ## App Store Connect checklist
 
-Full step-by-step: **[docs/APP_STORE_CONNECT.md](docs/APP_STORE_CONNECT.md)**
+Full step-by-step: **[docs/APP_STORE_CONNECT.md](docs/APP_STORE_CONNECT.md)**  
+Store copy & screenshots: **[docs/APP_STORE_METADATA.md](docs/APP_STORE_METADATA.md)**
 
 - [ ] Create app **RegisterBy** in App Store Connect
 - [ ] Create non-consumable IAP **`registerby_pro_lifetime`**

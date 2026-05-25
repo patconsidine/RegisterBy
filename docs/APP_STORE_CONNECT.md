@@ -91,6 +91,8 @@ Settings → Paywall → **Restore purchases** calls `AppStore.sync()` — test 
 
 ## Part C — Listing metadata (AU primary + US/UK)
 
+**Copy, keywords, screenshot shot list:** **[docs/APP_STORE_METADATA.md](APP_STORE_METADATA.md)** (paste-ready).
+
 ### 9. Localisations
 
 Add three App Store localisations:
