@@ -31,4 +31,6 @@ Email: **registerby.app.support@gmail.com**
 
 ## Changes
 
-We may update this policy; the in-app version link should match this document.
+We may update this policy; the published version should match this document.
+
+**Public URL (App Store):** https://patconsidine.github.io/RegisterBy/

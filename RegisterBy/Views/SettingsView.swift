@@ -52,6 +52,7 @@ struct SettingsView: View {
                     Button("Leave an App Store review") {
                         requestAppReview()
                     }
+                    Link("Support website", destination: AppSettings.supportPageURL)
                     if let mailURL = supportMailURL {
                         Link("Email support", destination: mailURL)
                     }
@@ -61,6 +62,7 @@ struct SettingsView: View {
                     Text(legalDisclaimer)
                         .font(.footnote)
                         .foregroundStyle(.secondary)
+                    Link("Privacy policy", destination: AppSettings.privacyPolicyURL)
                     Link("Notification settings", destination: URL(string: UIApplication.openSettingsURLString)!)
                 }
             }

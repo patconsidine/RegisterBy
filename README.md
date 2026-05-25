@@ -62,7 +62,12 @@ open ~/Projects/RegisterBy/RegisterBy.xcodeproj
 - Brand registration links (AU / UK / US)
 - 5 items free → **RegisterBy Pro** one-time unlock
 
-## Privacy
+## Privacy & support (public URLs)
+
+After enabling GitHub Pages (`docs/GITHUB_PAGES.md`):
+
+- Privacy: https://patconsidine.github.io/RegisterBy/
+- Support: https://patconsidine.github.io/RegisterBy/support.html
 
 No account, no analytics SDK, no server. Photos and data stored locally via SwiftData and the app documents directory.
 
@@ -75,7 +80,7 @@ Full step-by-step: **[docs/APP_STORE_CONNECT.md](docs/APP_STORE_CONNECT.md)**
 - [ ] Complete Paid Applications agreement + banking/tax
 - [ ] Test with **Sandbox** Apple ID on a real device
 - [ ] Primary locale: **English (Australia)** + US/UK localisations
-- [ ] Privacy policy URL + support page listing **registerby.app.support@gmail.com**
+- [ ] Enable GitHub Pages → privacy + support URLs (see `docs/GITHUB_PAGES.md`)
 - [ ] Archive and submit 1.0.0
 
 ## License

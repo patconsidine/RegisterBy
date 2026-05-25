@@ -118,4 +118,6 @@ enum AppSettings {
     static let freeItemLimit = 5
     static let proProductID = "registerby_pro_lifetime"
     static let supportEmail = "registerby.app.support@gmail.com"
+    static let privacyPolicyURL = URL(string: "https://patconsidine.github.io/RegisterBy/")!
+    static let supportPageURL = URL(string: "https://patconsidine.github.io/RegisterBy/support.html")!
 }
