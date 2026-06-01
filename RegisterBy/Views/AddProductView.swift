@@ -176,7 +176,7 @@ struct AddProductView: View {
         let trimmed = name.trimmingCharacters(in: .whitespaces)
         guard !trimmed.isEmpty else { return }
 
-        var item = ProductItem(
+        let item = ProductItem(
             name: trimmed,
             brand: brand,
             category: category,
