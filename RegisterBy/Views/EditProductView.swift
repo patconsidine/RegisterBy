@@ -6,6 +6,9 @@ struct EditProductView: View {
     @Environment(\.dismiss) private var dismiss
     @Bindable var item: ProductItem
 
+    @State private var receiptImage: UIImage?
+    @State private var serialImage: UIImage?
+
     var body: some View {
         Form {
             Section("Product") {
@@ -22,6 +25,7 @@ struct EditProductView: View {
             }
             Section("Dates") {
                 DatePicker("Purchase", selection: $item.purchaseDate, displayedComponents: .date)
+                TextField("Store (optional)", text: $item.storeName)
                 Toggle("Registration required", isOn: $item.registrationRequired)
                 if item.registrationRequired {
                     Stepper("Register within: \(item.registerWithinDays) days", value: $item.registerWithinDays, in: 1...365)
@@ -41,14 +45,21 @@ struct EditProductView: View {
                 TextField("Serial", text: $item.serialNumber)
                 TextField("Claim notes", text: $item.claimNotes, axis: .vertical)
             }
+            ProductPhotosFormSection(receiptImage: $receiptImage, serialImage: $serialImage)
         }
         .navigationTitle("Edit")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            receiptImage = ImageStore.load(filename: item.receiptImageFilename)
+            serialImage = ImageStore.load(filename: item.serialImageFilename)
+        }
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Done") {
                     item.updatedAt = .now
                     item.recomputeWarrantyEnd()
+                    ProductPhotoPersistence.saveReceipt(receiptImage, for: item)
+                    ProductPhotoPersistence.saveSerial(serialImage, for: item)
                     try? modelContext.save()
                     NotificationScheduler.schedule(for: item)
                     dismiss()
