@@ -19,9 +19,34 @@ Use these URLs in **App Store Connect** once Pages is enabled.
 
 Edit `docs/index.html` (privacy) or `docs/support.html` (support), commit, and push to `master`. Pages rebuilds automatically.
 
+## Make the repo public (for free Pages)
+
+GitHub Pages on a **private** repo needs a paid plan. For RegisterBy, making the repo **public** is the usual free option — only the website and source code are visible (not your users’ app data).
+
+### On github.com
+
+1. Open https://github.com/patconsidine/RegisterBy  
+2. **Settings** (repo settings, not your profile).  
+3. Scroll to the **Danger Zone** (bottom).  
+4. **Change repository visibility** → **Change visibility** → **Make public**.  
+5. Read the confirmation → type the repo name → confirm.
+
+### In GitHub Desktop (alternative)
+
+1. **Repository** → **Repository settings…**  
+2. If there is a visibility option, follow prompts — otherwise use the website steps above (Desktop often sends you to the browser).
+
+### After it’s public
+
+1. **Settings** → **Pages** → Source: branch **`main`**, folder **`/docs`** → **Save**.  
+2. Wait 1–3 minutes.  
+3. Open https://patconsidine.github.io/RegisterBy/ and https://patconsidine.github.io/RegisterBy/support.html  
+
+Your app’s user data never lives in GitHub — only this project’s Swift code and the two HTML pages.
+
 ## Private repository note
 
-Free GitHub Pages for **private** repos requires a paid GitHub plan. If Pages is unavailable, either make the repo **public** (only the docs are exposed as a website, not your whole machine) or host the same HTML files on Notion / another host.
+If you prefer to stay **private**, you need GitHub Pro (or similar) for Pages, or host `index.html` / `support.html` elsewhere (Notion, Cloudflare Pages, etc.).
 
 ## Keep in sync
 
