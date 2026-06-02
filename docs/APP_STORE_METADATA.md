@@ -94,21 +94,35 @@ No server; data is SwiftData + on-device photos only.
 
 ---
 
-## Screenshot plan (5–6 frames)
+## Screenshot plan (final 5)
 
 Use **iPhone 17 Pro Max** simulator (6.7" — required for modern listings).  
 **Light mode** is usually clearest for App Store; take one dark-mode set later if you want.
 
-| # | Screen to capture | Suggested caption (optional overlay in Preview/Keynote) |
-|---|-------------------|--------------------------------------------------------|
-| 1 | Onboarding screen 1 (“Don’t lose warranty money”) | Register before the deadline |
-| 2 | Home → **Action needed** with 2–3 sample items | See what needs attention |
-| 3 | Product **detail** — timeline + receipt thumbnail | Register · return · warranty |
-| 4 | **Add product** — Photos section visible (camera row) | Snap receipt & serial |
-| 5 | **Paywall** (add 6th item or Settings → Upgrade) | Pay once — no subscription |
-| 6 | **Settings** (optional) | Reminders you control |
+| # | Final file label | Caption overlay |
+|---|------------------|-----------------|
+| 1 | `Opening_Page_1` | Don't lose warranty money |
+| 2 | `Mark_as_Registered_w__Receipt` | Register · return · warranty — one place |
+| 3 | `Full_Home_Page` | Everything you own, one list |
+| 4 | `Dyson_Example` | Tap your brand's registration page |
+| 5 | `Pay_for_Pro` | Pay once. No subscription. |
 
-### Sample data for screenshots (add before capturing)
+### Optional alternates (if you re-export)
+
+- `Opening_Page_3` can replace `Pay_for_Pro` as frame 5 if you want a privacy-focused ending.
+- Keep `Pay_for_Pro` separately for the IAP review image either way.
+
+### Organize your screenshot assets
+
+Create these folders on your Mac so uploads stay clean:
+
+- `AppStore/6.7in/raw/` (original simulator PNGs)
+- `AppStore/6.7in/with-captions/` (final upload files)
+- `AppStore/iap-review/` (paywall screenshot copy)
+
+Keep filenames stable between raw and captioned versions.
+
+### Sample data for screenshots (reference)
 
 Create 3–4 fake items so Home/Action looks alive:
 
@@ -129,7 +143,7 @@ Use purchase dates a few weeks ago so register-by dates feel urgent (orange bann
    or **File → Save Screen** in Simulator menu.
 5. Repeat for each frame.
 
-**IAP review screenshot:** same as frame 5 (paywall). Apple requires one image when you create the non-consumable IAP.
+**IAP review screenshot:** `Pay_for_Pro` (same image is fine). Apple requires one image when you create the non-consumable IAP.
 
 ### Upload sizes
 
@@ -164,7 +178,7 @@ Display name: **RegisterBy Pro**
 ## Pre-submit checklist
 
 - [ ] GitHub Pages live (privacy + support URLs open in Safari)
-- [ ] 5–6 screenshots on Desktop
+- [ ] Final 5 captioned screenshots exported (and originals kept)
 - [ ] Paywall screenshot saved for IAP metadata
 - [ ] Description + keywords pasted into Connect
 - [ ] Availability: AU, NZ, US, UK, CA
