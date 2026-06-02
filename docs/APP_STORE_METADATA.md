@@ -15,7 +15,7 @@ Copy-paste ready for App Store Connect (after Developer Program enrolment).
 | **SKU** | `registerby-ios-001` (any unique string) |
 | **Category** | Productivity (or Finance — check competitor listings) |
 | **Age rating** | 4+ (no restricted content) |
-| **Copyright** | `© 2026 [Your legal name]` |
+| **Copyright** | `© 2026 Patrick Considine` |
 
 **Privacy URL:** https://patconsidine.github.io/RegisterBy/  
 **Support URL:** https://patconsidine.github.io/RegisterBy/support.html  
